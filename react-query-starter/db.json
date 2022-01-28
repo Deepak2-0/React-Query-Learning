@@ -29,5 +29,17 @@
             "id": 3,
             "name": "Jeoy Tribiani"
         }
+    ],
+    "users": [
+        {
+            "id": "deepak@example.com",
+            "channelId": "dcUniverse"
+        }
+    ],
+    "channels": [
+        {
+            "id": "dcUniverse",
+            "heroes": ["Batman", "SuperMan", "Flash", "Wonder Woman"]
+        }
     ]
 }
