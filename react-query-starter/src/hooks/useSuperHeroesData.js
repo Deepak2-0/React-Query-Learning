@@ -9,9 +9,9 @@ export const useSuperHeroesData = (onSuccess, onError) => {
     return useQuery("super-heroes", fetchSuperHeroes, {
         onSuccess,
         onError,
-        select: (data) => {
-            const superHereNames = data.data.map((hero) => hero.name);
-            return superHereNames;
-        },
+        // select: (data) => {
+        //     const superHereNames = data.data.map((hero) => hero.name);
+        //     return superHereNames;
+        // },
     });
 };

@@ -1,7 +1,8 @@
-import { useQuery } from "react-query";
+// import { useQuery } from "react-query";
 // import axios from "axios";
 
 import { useSuperHeroesData } from "../hooks/useSuperHeroesData";
+import { Link } from "react-router-dom";
 
 // const fetchSuperHeroes = () => {
 //     return axios.get("http://localhost:4000/superheroes");
@@ -148,8 +149,10 @@ export const RQSuperHeroesPage = () => {
     return (
         <>
             <h2>React Query Super Heroes Page</h2>
-            {superheroes.map((heroName) => (
-                <div key={heroName}>{heroName}</div>
+            {superheroes.data.map((hero) => (
+                <div key={hero.id}>
+                    <Link to={`/rq-super-heroes/${hero.id}`}>{hero.name}</Link>
+                </div>
             ))}
         </>
     );
