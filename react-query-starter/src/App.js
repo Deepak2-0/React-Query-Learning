@@ -9,7 +9,6 @@ import RQSuperHeroPage from "./components/RQSuperHero.page";
 import ParallelQueries from "./components/ParallelQueries.page";
 import DynamicParallelQueries from "./components/DynamicParallerQueries.page";
 import DependentQueries from "./components/DependentQueries.page";
-
 const queryClient = new QueryClient();
 
 function App() {

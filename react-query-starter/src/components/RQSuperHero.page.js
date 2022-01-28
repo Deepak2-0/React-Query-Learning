@@ -1,15 +1,25 @@
 import { useParams } from "react-router-dom";
 import { useSuperHeroData } from "../hooks/useSuperHeroData";
+import { useInitialSuperHeroData } from "../hooks/useInitialSuperHeroData";
 
 const RQSuperHeroPage = () => {
     const { heroId } = useParams();
 
+    // const {
+    //     isLoading,
+    //     data: superHeroData,
+    //     error,
+    //     isError,
+    // } = useSuperHeroData(heroId);
+
+    //Useful when some part of data is alreay present in parent page, so will show partial data and not show loader
+    //till rest of data comes
     const {
         isLoading,
         data: superHeroData,
         error,
         isError,
-    } = useSuperHeroData(heroId);
+    } = useInitialSuperHeroData(heroId);
 
     if (isLoading) return <h2>Loading ....</h2>;
 
