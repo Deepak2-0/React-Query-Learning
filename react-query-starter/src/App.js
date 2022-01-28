@@ -11,6 +11,7 @@ import DynamicParallelQueries from "./components/DynamicParallerQueries.page";
 import DependentQueries from "./components/DependentQueries.page";
 import PaginatedQueries from "./components/PaginatedQueries.page";
 import InfiniteQueries from "./components/InfiniteQueries.page";
+import {RQMutationSuperHeroes} from "./components/RQMutationQueries.page";
 
 const queryClient = new QueryClient();
 
@@ -60,6 +61,11 @@ function App() {
                                     RQ Infinite Queries
                                 </Link>
                             </li>
+                            <li>
+                                <Link to="/rq-add-super-hero">
+                                    RQ Mutation Queries
+                                </Link>
+                            </li>
                         </ul>
                     </nav>
                     <Switch>
@@ -88,6 +94,9 @@ function App() {
                         </Route>
                         <Route path="/rq-infinite">
                             <InfiniteQueries />
+                        </Route>
+                        <Route path="/rq-add-super-hero">
+                            <RQMutationSuperHeroes />
                         </Route>
 
                         <Route path="/">
