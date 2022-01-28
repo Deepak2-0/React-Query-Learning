@@ -41,5 +41,39 @@
             "id": "dcUniverse",
             "heroes": ["Batman", "SuperMan", "Flash", "Wonder Woman"]
         }
+    ],
+    "colors": [
+        {
+            "id": 1,
+            "color": "violet"
+        },
+        {
+            "id": 2,
+            "color": "indigo"
+        },
+        {
+            "id": 3,
+            "color": "blue"
+        },
+        {
+            "id": 4,
+            "color": "green"
+        },
+        {
+            "id": 5,
+            "color": "yellow"
+        },
+        {
+            "id": 6,
+            "color": "orange"
+        },
+        {
+            "id": 7,
+            "color": "red"
+        },
+        {
+            "id": 8,
+            "color": "pink"
+        }
     ]
 }
