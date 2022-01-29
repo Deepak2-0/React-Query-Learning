@@ -25,16 +25,51 @@ export const useSuperHeroesData = () => {
 // OR
 
 //Directly appending the new data to superheroes list, so that no need for calling the super-heroes data again
+//Handling Mutation Response
+// export const useAddSuperHeroData = () => {
+//     const queryClient = useQueryClient();
+//     return useMutation(addSuperHero, {
+//         onSuccess: (data) => {
+//             queryClient.setQueryData("super-heroes", (oldQueryData) => {
+//                 return {
+//                     ...oldQueryData,
+//                     data: [...oldQueryData.data, data.data],
+//                 };
+//             });
+//         },
+//     });
+// };
+
+//OR
+//Optimistic Updates
 export const useAddSuperHeroData = () => {
     const queryClient = useQueryClient();
     return useMutation(addSuperHero, {
-        onSuccess: (data) => {
+        onMutate: async (newHero) => {
+            await queryClient.cancelQueries("super-heroes");
+            const previousHeroData = queryClient.getQueryData("super-heroes");
             queryClient.setQueryData("super-heroes", (oldQueryData) => {
                 return {
                     ...oldQueryData,
-                    data: [...oldQueryData.data, data.data],
+                    data: [
+                        ...oldQueryData.data,
+                        {
+                            id: oldQueryData?.data?.length + 1,
+                            ...newHero,
+                        },
+                    ],
                 };
             });
+
+            return {
+                previousHeroData,
+            };
+        },
+        onError: (error, hero, context) => {
+            queryClient.setQueryData("super-heroes", context.previousHeroData);
+        },
+        onSettled: () => {
+            queryClient.invalidateQueries("super-heroes");
         },
     });
 };
