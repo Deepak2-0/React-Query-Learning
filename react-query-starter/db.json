@@ -1,89 +1,94 @@
 {
-    "superheroes": [
-        {
-            "id": 1,
-            "name": "Batman",
-            "alterEgo": "Bruce Wayne"
-        },
-        {
-            "id": 2,
-            "name": "Superman",
-            "alterEgo": "Clark Kent"
-        },
-        {
-            "id": 3,
-            "name": "Wonder Woman",
-            "alterEgo": "Princess Diana"
-        },
-        {
-            "name": "Flash",
-            "alterEgo": "Barry Allen",
-            "id": 4
-        },
-        {
-            "name": "Bhopu Singh",
-            "alterEgo": "Jhopu SINGH",
-            "id": 5
-        }
-    ],
-    "friends": [
-        {
-            "id": 1,
-            "name": "Chandler Bing"
-        },
-        {
-            "id": 2,
-            "name": "Monical"
-        },
-        {
-            "id": 3,
-            "name": "Jeoy Tribiani"
-        }
-    ],
-    "users": [
-        {
-            "id": "deepak@example.com",
-            "channelId": "dcUniverse"
-        }
-    ],
-    "channels": [
-        {
-            "id": "dcUniverse",
-            "heroes": ["Batman", "SuperMan", "Flash", "Wonder Woman"]
-        }
-    ],
-    "colors": [
-        {
-            "id": 1,
-            "color": "violet"
-        },
-        {
-            "id": 2,
-            "color": "indigo"
-        },
-        {
-            "id": 3,
-            "color": "blue"
-        },
-        {
-            "id": 4,
-            "color": "green"
-        },
-        {
-            "id": 5,
-            "color": "yellow"
-        },
-        {
-            "id": 6,
-            "color": "orange"
-        },
-        {
-            "id": 7,
-            "color": "red"
-        },
-        {
-            "id": 8,
-            "color": "pink"
-        }
-    ]
+  "superheroes": [
+    {
+      "id": 1,
+      "name": "Batman",
+      "alterEgo": "Bruce Wayne"
+    },
+    {
+      "id": 2,
+      "name": "Superman",
+      "alterEgo": "Clark Kent"
+    },
+    {
+      "id": 3,
+      "name": "Wonder Woman",
+      "alterEgo": "Princess Diana"
+    },
+    {
+      "name": "Flash",
+      "alterEgo": "Barry Allen",
+      "id": 4
+    },
+    {
+      "name": "Bhopu Singh",
+      "alterEgo": "Jhopu SINGH",
+      "id": 5
+    }
+  ],
+  "friends": [
+    {
+      "id": 1,
+      "name": "Chandler Bing"
+    },
+    {
+      "id": 2,
+      "name": "Monical"
+    },
+    {
+      "id": 3,
+      "name": "Jeoy Tribiani"
+    }
+  ],
+  "users": [
+    {
+      "id": "deepak@example.com",
+      "channelId": "dcUniverse"
+    }
+  ],
+  "channels": [
+    {
+      "id": "dcUniverse",
+      "heroes": [
+        "Batman",
+        "SuperMan",
+        "Flash",
+        "Wonder Woman"
+      ]
+    }
+  ],
+  "colors": [
+    {
+      "id": 1,
+      "color": "violet"
+    },
+    {
+      "id": 2,
+      "color": "indigo"
+    },
+    {
+      "id": 3,
+      "color": "blue"
+    },
+    {
+      "id": 4,
+      "color": "green"
+    },
+    {
+      "id": 5,
+      "color": "yellow"
+    },
+    {
+      "id": 6,
+      "color": "orange"
+    },
+    {
+      "id": 7,
+      "color": "red"
+    },
+    {
+      "id": 8,
+      "color": "pink"
+    }
+  ]
 }
